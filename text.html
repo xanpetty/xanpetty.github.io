@@ -6,6 +6,43 @@
     <link rel="stylesheet" href="xan.css">
   </head>
   <body>
-    <h3>welcome to my text demo</h3>
+    <h2>Text Demo</h2>
+
+    <h3>get ASCII characters</h3>
+
+    Python:<br><br>
+    <code>
+    for i in range(32,127):<br>
+    &nbsp;&nbsp;  print(chr(i), end='')<br>
+    <br>
+    >>>&nbsp;!"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+    `abcdefghijklmnopqrstuvwxyz{|}~
+    </code>
+
+    <h3>Enter ASCII into LibreOffice Writer with Arial Black font</h3>
+    <img src="images/writer.png" alt="characters in LibreOffice Writer" width="640" height="531">
+
+    <h3>extract text</h3>
+    <img src="images/arial-black.png" alt="Arial Black font characters on white background" width="640">
+
+    <h3>convert PNG to SVG with Inkscape</h3>
+    <object id="white-hollow" width="640" height="346"
+      data="images/arial-black-hollow.svg" type="image/svg+xml">
+    </object><br>
+    the hollow effect was a happy accident using 'Edge Detection' in Inkscape's
+    'Trace Bitmap' tool and I'm keeping it.
+    <script>
+      // this changes the font color of the SVG to white
+      window.onload=function() {
+        // Get the Object by ID
+        var svgObj = document.getElementById("white-hollow");
+        // Get the SVG document inside the Object tag
+        var svgDoc = svgObj.contentDocument;
+        // Get one of the SVG items by ID. I created an ID in the path.
+        var svgItem = svgDoc.getElementById("letters");
+        // Set the colour to something else
+        svgItem.setAttribute("fill", "white");
+      };
+    </script>
   </body>
 </html>
