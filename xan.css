@@ -8,6 +8,7 @@ body {
 }
 
 code {
+  text-align: left;
   color: lime;
 }
 
@@ -26,8 +27,4 @@ a {
 
 code {
   "Lucida Console", Monaco, monospace;
-}
-
-#white-hollow {
-  fill: white;
 }
