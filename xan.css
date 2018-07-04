@@ -2,6 +2,13 @@ body {
   background-color: #666;
   font-family: Arial;
   color: white;
+  border: double 5px white;
+  border-radius: 10em;
+  text-align: center;
+}
+
+code {
+  color: lime;
 }
 
 h2 {
