@@ -1,20 +1,33 @@
+@font-face {
+  font-family: 'Arial-Hollow';
+  src:
+    url('fonts/arial-black-hollow.ttf') format('ttf'),
+    url('fonts/arial-black-hollow.woff') format('woff');
+}
+
 body {
+  width: 800px;
   background-color: #666;
   font-family: Arial;
   color: white;
   border: double 5px white;
   border-radius: 10em;
   text-align: center;
+  margin:0 auto;
 }
 
-code {
+#python {
+  width: 640px;
+  font-family: monospace;
   text-align: left;
   color: lime;
+  margin:0 auto;
+
 }
 
 h2 {
-  color: #ddd;
-  font-family: Arial;
+  color: white;
+  font-family: 'Arial-Hollow';
 }
 
 h3 {
@@ -23,8 +36,4 @@ h3 {
 
 a {
     color: #aff;
-}
-
-code {
-  "Lucida Console", Monaco, monospace;
 }
