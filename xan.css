@@ -5,12 +5,6 @@
     url('fonts/arial-black-hollow.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Candice';
-  src:
-    url('fonts/Candice.ttf') format('truetype');
-}
-
 body {
   width: 800px;
   background-color: #666;
@@ -44,7 +38,6 @@ h2 {
 
 h3 {
   color: #40e0d0;
-  font-family: 'Candice';
 }
 
 a {
