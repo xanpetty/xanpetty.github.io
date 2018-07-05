@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="xan.css">
   </head>
   <body>
-    <h2>Text Demo</h2>
+    <div id="title">Text Demo</div>
 
     <h3>get ASCII characters</h3>
 
     <div class="text">
-      Python:<br><br>
+      Python 3:<br><br>
       <div id='python'>
         for i in range(32,127):<br>
         &nbsp;&nbsp;  print(chr(i), end='')<br>
         <br>
         >>>
-        !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+        !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~
       </div>
     </div>
 
@@ -49,10 +49,14 @@
       };
     </script>
 
-    <h3>Convert SVG to fonts</h3>
-    <div class="text">
-      I then used FontForge to turn it into a font.<br>
-      <a href="fonts/arial-black-hollow.sfd">Arial-Black-Hollow in FontForge format</a>
+    <div class="hollow-text">
+    Then I turned it into a font with FontForge.<br>
     </div>
+    <a href="fonts/arial-black-hollow.svg">arial-black-hollow.svg</a><br>
+    <a href="fonts/arial-black-hollow.ttf">arial-black-hollow.ttf</a><br>
+    <a href="fonts/arial-black-hollow.woff">arial-black-hollow.woff</a><br>
+    <a href="fonts/arial-black-hollow.sfd">Arial-Black-Hollow in FontForge format</a><br>
+
+    <br>
   </body>
 </html>
