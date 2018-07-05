@@ -1,8 +1,14 @@
 @font-face {
   font-family: 'Arial-Hollow';
   src:
-    url('fonts/arial-black-hollow.ttf') format('ttf'),
+    url('fonts/arial-black-hollow.ttf') format('truetype'),
     url('fonts/arial-black-hollow.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Candice';
+  src:
+    url('fonts/Candice.ttf') format('truetype');
 }
 
 body {
@@ -11,9 +17,15 @@ body {
   font-family: Arial;
   color: white;
   border: double 5px white;
-  border-radius: 10em;
+  border-radius: 8em;
   text-align: center;
   margin:0 auto;
+}
+
+.text {
+  width: 640px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 #python {
@@ -32,6 +44,7 @@ h2 {
 
 h3 {
   color: #40e0d0;
+  font-family: 'Candice';
 }
 
 a {
