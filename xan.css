@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Arial-Hollow';
   src:
+    url('fonts/arial-black-hollow.woff') format('woff'),
     url('fonts/arial-black-hollow.svg') format('svg'),
-    url('fonts/arial-black-hollow.ttf') format('truetype'),
-    url('fonts/arial-black-hollow.woff') format('woff');
+    url('fonts/arial-black-hollow.ttf') format('truetype');
 }
 
 body {
