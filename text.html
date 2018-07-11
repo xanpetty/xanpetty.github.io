@@ -11,14 +11,14 @@
     <h3>get ASCII characters</h3>
 
     <div class="text">
-      Python 3:<br><br>
-      <div id='python'>
-        for i in range(32,127):<br>
-        &nbsp;&nbsp;  print(chr(i), end='')<br>
-        <br>
-        >>>
-        !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~
-      </div>
+      Python 3:
+    </div>
+    <div id='python'>
+      for i in range(32,127):<br>
+      &nbsp;&nbsp;  print(chr(i), end='')<br>
+      <br>
+      >>>
+      !"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~
     </div>
 
     <h3>Enter ASCII into LibreOffice Writer with Arial Black font</h3>
@@ -30,7 +30,7 @@
     <h3>convert PNG to SVG with Inkscape</h3>
     <object id="white-hollow" width="640" height="346"
       data="images/arial-black-hollow.svg" type="image/svg+xml">
-    </object><br>
+    </object>
     <div class="text">
       the hollow effect was a happy accident using 'Edge Detection' in Inkscape's
       'Trace Bitmap' tool and I'm keeping it.
@@ -50,21 +50,20 @@
     </script>
 
     <div class="hollow-text">
-    Then  I  turned  it  into  a  font  with  FontForge.<br>
+      Then  I  turned  it  into  a  font  with  FontForge.
     </div>
     <a href="fonts/arial-black-hollow.svg">arial-black-hollow.svg</a><br>
     <a href="fonts/arial-black-hollow.ttf">arial-black-hollow.ttf</a><br>
     <a href="fonts/arial-black-hollow.woff">arial-black-hollow.woff</a><br>
-    <a href="fonts/arial-black-hollow.sfd">Arial-Black-Hollow in FontForge format</a><br>
-    <br>
+    <a href="fonts/fontforge-arial-black-hollow.sfd">Arial-Black-Hollow in FontForge format</a><br>
     <div class="text">
       It's not a finished font as I didn't bother kerning individual letter pairs like 'To' or 'Av',
       and it's only the most basic ASCII characters but it'll suffice for this demo.
-      I then used the .ttf font with Hiero to create a font that will work with A-frame,
-      Mozilla's VR platform. Hiero generated both the .fnt and .png at the same time.
+      I then converted the .ttf font with Hiero creating a font that will work with A-frame,
+      Mozilla's VR platform.
     </div>
-    <a href="fonts/aframe-arial-black-hollow.fnt">aframe-arial-black-hollow.fnt</a><br>
-    <a href="fonts/aframe-arial-black-hollow.png">aframe-arial-black-hollow.png</a><br>
-    <br>
+    <div id="bottom">
+      <a class="big_link" href="vr.html">see VR demo</a>
+    </div>
   </body>
 </html>

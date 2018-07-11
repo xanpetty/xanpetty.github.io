@@ -22,6 +22,8 @@ body {
   width: 640px;
   text-align: left;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hollow-text {
@@ -31,6 +33,8 @@ body {
   margin: 0 auto;
   color: aqua;
   font-size: 200%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #python {
@@ -45,6 +49,8 @@ body {
   color: white;
   font-family: 'Arial-Hollow';
   font-size: 400%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -52,5 +58,24 @@ h3 {
 }
 
 a {
-    color: #40e0d0;
+    color: aqua;
+}
+
+iframe {
+  width: 640px;
+  height: 320px;
+  border: 0px;
+}
+
+#bottom {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.big_link {
+  font-family: 'Arial-Hollow';
+  width: 640px;
+  text-align: center;
+  color: aqua;
+  font-size: 200%;
 }

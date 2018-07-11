@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR demo</title>
+    <link rel="stylesheet" href="xan.css">
+    <!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> -->
+  </head>
+  <body>
+    <div id="title">VR demo</div>
+    <div class="text">
+      Hiero generated both the .fnt and .png files at the same time.
+    </div><br>
+    <a href="fonts/aframe-arial-black-hollow.fnt">aframe-arial-black-hollow.fnt</a><br>
+    <a href="fonts/aframe-arial-black-hollow.png">aframe-arial-black-hollow.png</a><br>
+
+    <!-- flat text -->
+    <div class="text">
+      The font works perfectly with A-frame however it isn't 3D and the letters
+      disappear when the front surface isn't facing the viewer.
+    </div>
+    <iframe id="flat-text" src="aframe/flat-text.html"></iframe>
+
+    <!-- mouse drag a -->
+    <div class="text">
+      There are more efficient ways to display 3D text but as a proof of concept
+      I used Blender to convert an SVG of the letter 'a' from my Arial-Black-Hollow
+      font into a 3D model that can be dragged by a mouse.
+    </div>
+    <a href="vr/a.gltf">a.gltf model</a><br>
+    <a href="vr/buffer_a.bin"> binary data for model</a><br>
+    <iframe id="rotating-a" src="aframe/mouse-drag-a.html"></iframe>
+
+    <!-- text geometry -->
+    <div class="text">
+      The aframe-text-geometry-component makes it possible to use 3D text with A-frame.
+    </div>
+    <iframe id="text-geometry" src="aframe/text-geometry.html"></iframe>
+
+
+  </body>
+</html>
