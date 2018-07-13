@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress VR demo</title>
+	<atom:link href="/index.php/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>VR demo</description>
+	<lastBuildDate>Thu, 12 Jul 2018 22:46:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<item>
+		<title>obj file viewer</title>
+		<link>/index.php/2018/07/12/obj-file-viewer/</link>
+		<pubDate>Thu, 12 Jul 2018 20:06:45 +0000</pubDate>
+		<dc:creator><![CDATA[vr_admin]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=72</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<div class="canvasio3D" style='background-color:#666666;color:#000000;border:0px solid;border-color:#666;width:640px;height:320px;overflow: hidden;-moz-box-shadow: 0 0 1px #888; -webkit-box-shadow: 0 0 1px#888; box-shadow: 0 0 1px #888;padding:0px;'><div id="3D_1" data-parameter="{'loadingtext':'Loading ...','vector':'off','mousewheel':'off','backimg':'','reflection':'','refval':'0','floor':'on','floorheight':'50','objpath':'\/wp-content\/uploads\/2018\/07\/canvasio_a.obj','texturpath':'','envtexturpath':'','objcol':'','objcolor':'0x00FFFF','objscale':'20','objshadow':'off','width':'640','height':'320','dropshadow':'1','zoom':'50','textcol':'#000000','border':'0','bordercol':'#666','backcol':'#666666','text':'','rollspeedx':'0','rollspeedy':'0','rollspeedh':'0','rollspeedv':'0','rollmode':'','mouse':'on','lightset':'2','lightrotate':'off','shine':'0','ambient':'0xaaa','fps':'','wincount':'0','_uploadUrl':'\/wp-content\/uploads\/','_picUrl':'\/wp-content\/plugins','lang':'en_US','help':'off','winCount':0}"></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>stl file viewer</title>
+		<link>/index.php/2018/07/12/stl-file-viewer/</link>
+		<pubDate>Thu, 12 Jul 2018 18:30:29 +0000</pubDate>
+		<dc:creator><![CDATA[vr_admin]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=9</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<div class="canvasio3D" style='background-color:#666666;color:#000000;border:0px solid;border-color:#666;width:640px;height:320px;overflow: hidden;-moz-box-shadow: 0 0 1px #888; -webkit-box-shadow: 0 0 1px#888; box-shadow: 0 0 1px #888;padding:0px;'><div id="3D_2" data-parameter="{'loadingtext':'Loading ...','vector':'off','mousewheel':'off','backimg':'','reflection':'','refval':'0','floor':'on','floorheight':'50','objpath':'\/wp-content\/uploads\/2018\/07\/canvasio_a.stl','texturpath':'','envtexturpath':'','objcol':'','objcolor':'0x00FFFF','objscale':'20','objshadow':'off','width':'640','height':'320','dropshadow':'1','zoom':'50','textcol':'#000000','border':'0','bordercol':'#666','backcol':'#666666','text':'','rollspeedx':'0','rollspeedy':'0','rollspeedh':'0','rollspeedv':'0','rollmode':'','mouse':'on','lightset':'2','lightrotate':'off','shine':'0','ambient':'0xaaa','fps':'','wincount':'0','_uploadUrl':'\/wp-content\/uploads\/','_picUrl':'\/wp-content\/plugins','lang':'en_US','help':'off','':null,'winCount':1}"></div></div>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>A-frame in an iframe</title>
+		<link>/index.php/2018/07/12/a-frame-in-an-iframe/</link>
+		<pubDate>Thu, 12 Jul 2018 17:52:23 +0000</pubDate>
+		<dc:creator><![CDATA[vr_admin]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=5</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[
+<!-- iframe plugin v.4.3 wordpress.org/plugins/iframe/ -->
+<iframe src="https://xanpetty.github.io/aframe/mouse-drag-a.html" width="640" height="320" frameborder="0" scrolling="yes" class="iframe-class"></iframe>
+
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
