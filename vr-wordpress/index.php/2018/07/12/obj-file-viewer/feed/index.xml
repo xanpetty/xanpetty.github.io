@@ -7,10 +7,10 @@
 	>
 <channel>
 	<title>Comments on: obj file viewer</title>
-	<atom:link href="/index.php/2018/07/12/obj-file-viewer/feed/" rel="self" type="application/rss+xml" />
-	<link>/index.php/2018/07/12/obj-file-viewer/</link>
+	<atom:link href="/vr-wordpress/index.php/2018/07/12/obj-file-viewer/feed/" rel="self" type="application/rss+xml" />
+	<link>/vr-wordpress/index.php/2018/07/12/obj-file-viewer/</link>
 	<description>VR demo</description>
-	<lastBuildDate>Fri, 13 Jul 2018 05:24:43 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 13 Jul 2018 06:53:44 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.7</generator>
