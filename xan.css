@@ -18,6 +18,10 @@ body {
   margin:0 auto;
 }
 
+.links {
+    white-space: pre;
+}
+
 .text {
   width: 640px;
   text-align: left;
@@ -53,12 +57,14 @@ body {
   margin-bottom: 40px;
 }
 
-h3 {
+h2 {
   color: aqua;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 a {
-    color: aqua;
+  color: aqua;
 }
 
 iframe {
@@ -76,6 +82,6 @@ iframe {
   font-family: 'Arial-Hollow';
   width: 640px;
   text-align: center;
-  color: aqua;
+  color: #0ff;
   font-size: 200%;
 }

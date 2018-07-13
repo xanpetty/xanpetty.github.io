@@ -3,7 +3,22 @@
  <head>
    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
    <script src="https://unpkg.com/aframe-click-drag-component"></script>
- </head>
+   <style>
+     a-scene {
+          cursor: move; /* fallback if grab cursor is unsupported */
+          cursor: grab;
+          cursor: -moz-grab;
+          cursor: -webkit-grab;
+      }
+
+       /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+      a-scene:active {
+          cursor: grabbing;
+          cursor: -moz-grabbing;
+          cursor: -webkit-grabbing;
+      }
+    </style>
+  </head>
   <body>
     <!-- make objects mouse draggable -->
     <script type="text/javascript">
