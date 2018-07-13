@@ -9,7 +9,10 @@
   <body>
     <div id="title">A-Frame demo</div>
     <div class="text">
-      Hiero generated both the .fnt and .png files at the same time.
+      A-Frame is a Mozilla project. While the examples below are viewable in most current
+      browsers the results currently render best in Firefox.
+      <br><br>
+      Continuing from the text demo, Hiero generated both the .fnt and .png files at the same time.
     </div>
     <div class="links">
       <a href="fonts/aframe-arial-black-hollow.fnt">aframe-arial-black-hollow.fnt</a>
@@ -27,13 +30,43 @@
     <div class="text">
       There are more efficient ways to display 3D text but as a proof of concept
       I used Blender to convert an SVG of the letter 'a' from my Arial-Black-Hollow
-      font into a 3D model that can be dragged by a mouse.
+      font into a gltf and obj 3D models that can be dragged by a mouse.
     </div>
     <div class="links">
       <a href="vr/a.gltf">a.gltf model</a>
-      <a href="vr/buffer_a.bin"> binary data for model</a>
+      <a href="vr/buffer_a.bin"> binary data for gltf model</a>
+      <a href="vr/a.obj">a.obj model</a>
+      <a href="vr/a.mtl"> binary data for obj model</a>
     </div>
-    <iframe id="rotating-a" src="a-frame/mouse-drag-a-gltf.html"></iframe>
+
+    <div class="text">
+      The models appear to be identical in A-Frame but you're welcome to compare them
+      by pressing the buttons below.
+    </div>
+
+    <!-- buttons change which model is viewed in the iframe -->
+    <script>
+      function set_gltf() {
+        if (document.getElementById("model-viewer").children[0].id != "gltf") {
+          document.getElementById("model-viewer").children[0].src = "a-frame/mouse-drag-a-gltf.html";
+          document.getElementById("model-viewer").children[0].id  = "gltf";
+        }
+      }
+      function set_obj() {
+        if (document.getElementById("model-viewer").children[0].id != "obj") {
+          document.getElementById("model-viewer").children[0].src = "a-frame/mouse-drag-a-obj.html";
+          document.getElementById("model-viewer").children[0].id  = "obj";
+        }
+      }
+    </script>
+
+    <div class="buttons">
+      <button id="gltf_button" onclick="set_gltf()" autofocus>gltf model</button>
+      <button id="obj_button" onclick="set_obj()">obj model</button>
+    </div>
+    <div id="model-viewer">
+      <iframe id="gltf" src="a-frame/mouse-drag-a-gltf.html"></iframe>
+    <div>
 
     <!-- text geometry -->
     <div class="text">
