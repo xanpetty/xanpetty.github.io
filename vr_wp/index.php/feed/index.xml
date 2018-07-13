@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress VR demo</title>
+	<atom:link href="/vr_wp/index.php/feed/" rel="self" type="application/rss+xml" />
+	<link>/vr_wp</link>
+	<description>VR demo</description>
+	<lastBuildDate>Fri, 13 Jul 2018 18:02:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<item>
+		<title>obj file in A-Frame</title>
+		<link>/vr_wp/index.php/2018/07/12/obj-file-in-a-frame/</link>
+		<pubDate>Thu, 12 Jul 2018 20:06:45 +0000</pubDate>
+		<dc:creator><![CDATA[vr_admin]]></dc:creator>
+				<category><![CDATA[A-Frame]]></category>
+
+		<guid isPermaLink="false">/vr_wp/?p=72</guid>
+		<description><![CDATA[A-frame in an iframe displaying an obj file]]></description>
+				<content:encoded><![CDATA[
+<!-- iframe plugin v.4.3 wordpress.org/plugins/iframe/ -->
+<iframe src="https://xanpetty.github.io/a-frame/mouse-drag-a-obj.html" width="640" height="320" frameborder="0" scrolling="yes" class="iframe-class"></iframe>
+
+<p>A-frame in an iframe displaying an obj file</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>gltf file in A-Frame</title>
+		<link>/vr_wp/index.php/2018/07/12/gltf-file-in-a-frame/</link>
+		<pubDate>Thu, 12 Jul 2018 17:52:23 +0000</pubDate>
+		<dc:creator><![CDATA[vr_admin]]></dc:creator>
+				<category><![CDATA[A-Frame]]></category>
+
+		<guid isPermaLink="false">/vr_wp/?p=5</guid>
+		<description><![CDATA[A-frame in an iframe displaying a gltf file]]></description>
+				<content:encoded><![CDATA[
+<!-- iframe plugin v.4.3 wordpress.org/plugins/iframe/ -->
+<iframe src="https://xanpetty.github.io/a-frame/mouse-drag-a-gltf.html" width="640" height="320" frameborder="0" scrolling="yes" class="iframe-class"></iframe>
+
+<p>A-frame in an iframe displaying a gltf file</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
