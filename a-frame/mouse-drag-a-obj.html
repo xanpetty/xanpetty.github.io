@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+   <script src="https://unpkg.com/aframe-click-drag-component"></script>
+   <style>
+     a-scene {
+          cursor: move; /* fallback if grab cursor is unsupported */
+          cursor: grab;
+          cursor: -moz-grab;
+          cursor: -webkit-grab;
+      }
+
+       /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+      a-scene:active {
+          cursor: grabbing;
+          cursor: -moz-grabbing;
+          cursor: -webkit-grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- make objects mouse draggable -->
+    <script type="text/javascript">
+      AFRAME.registerComponent('drag-rotate-component',{
+        schema : { speed : {default:1}},
+        init : function(){
+          this.ifMouseDown = false;
+          this.x_cord = 0;
+          this.y_cord = 0;
+          document.addEventListener('mousedown',this.OnDocumentMouseDown.bind(this));
+          document.addEventListener('mouseup',this.OnDocumentMouseUp.bind(this));
+          document.addEventListener('mousemove',this.OnDocumentMouseMove.bind(this));
+        },
+        OnDocumentMouseDown : function(event){
+          this.ifMouseDown = true;
+          this.x_cord = event.clientX;
+          this.y_cord = event.clientY;
+        },
+        OnDocumentMouseUp : function(){
+          this.ifMouseDown = false;
+        },
+        OnDocumentMouseMove : function(event)
+        {
+          if(this.ifMouseDown)
+          {
+            var temp_x = event.clientX-this.x_cord;
+            var temp_y = event.clientY-this.y_cord;
+            if(Math.abs(temp_y)<Math.abs(temp_x))
+            {
+              this.el.object3D.rotateY(temp_x*this.data.speed/100);
+            }
+            else
+            {
+              this.el.object3D.rotateX(temp_y*this.data.speed/100);
+            }
+            this.x_cord = event.clientX;
+            this.y_cord = event.clientY;
+          }
+        }
+      });
+    </script>
+    <a-scene>
+      <a-assets>
+        <img id="grid" src="../vr/grey_grid.png">
+        <a-asset-item id="letter-a" src="../vr/a.obj"></a-asset-item>
+      </a-assets>
+      <a-obj-model src="#letter-a" color="aqua" position="0 2 -3" rotation="0 225 0" drag-rotate-component></a-obj-model>
+      <a-entity id="plane" geometry="primitive: plane; width: 1000; height: 1000"
+        material="src: #grid; color: #333; repeat: 1000 1000; transparent: true; metalness: 0.6; roughness: 0.4"
+        rotation="-90 0 0">
+      </a-entity>
+     <a-sky color="#666"></a-sky>
+     <a-camera position="0 2 0" look-controls="enabled:false"></a-camera>
+   </a-scene>
+ </body>
+</html>

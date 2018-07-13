@@ -1,0 +1,23 @@
+<head>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="grid" src="../vr/grey_grid.png">
+      <a-asset-item id="arial-black-hollow" src="../fonts/facetypejs-arial-black-hollow.json"></a-asset-item>
+    </a-assets>
+
+    <a-entity position="-3.3 1.5 -2.4" material="color: aqua"
+      text-geometry="height: 0.2; value: Arial-Black-Hollow; font: #arial-black-hollow">
+      <a-animation attribute="rotation" dur="10000" fill="forwards" to="360 0 0" repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity id="plane" geometry="primitive: plane; width: 1000; height: 1000"
+      material="color: #333; src: #grid; repeat: 1000 1000; transparent: true; metalness: 0.6; roughness: 0.4"
+      rotation="-90 0 0">
+    </a-entity>
+    <a-sky color="#666"></a-sky>
+  </a-scene>
+</body>
