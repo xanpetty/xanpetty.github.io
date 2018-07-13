@@ -22,6 +22,19 @@ body {
     white-space: pre;
 }
 
+.big_link {
+  font-family: 'Arial-Hollow';
+  text-align: center;
+  color: aqua;
+  font-size: 200%;
+}
+
+#bottom {
+  white-space: pre;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .text {
   width: 640px;
   text-align: left;
@@ -73,17 +86,4 @@ iframe {
   border: 0px;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-#bottom {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.big_link {
-  font-family: 'Arial-Hollow';
-  width: 640px;
-  text-align: center;
-  color: #0ff;
-  font-size: 200%;
 }
