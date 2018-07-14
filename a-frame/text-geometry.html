@@ -10,10 +10,12 @@
       <a-asset-item id="arial-black-hollow" src="../fonts/facetypejs-arial-black-hollow.json"></a-asset-item>
     </a-assets>
 
-    <a-entity position="-3.3 1.5 -2.4" material="color: aqua"
-      text-geometry="height: 0.2; value: Arial-Black-Hollow; font: #arial-black-hollow">
-      <a-animation attribute="rotation" dur="10000" fill="forwards" to="360 0 0" repeat="indefinite"></a-animation>
-    </a-entity>
+    <a-box position="0 1.5 -2.4" opacity="0.0" depth="0.1" height="0.1" width="0.1">
+      <a-entity material="color: aqua" position="-3.4 0 0"
+        text-geometry="height: 0.2; value: Arial-Black-Hollow; font: #arial-black-hollow">
+      </a-entity>
+      <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-box>
     <a-entity id="plane" geometry="primitive: plane; width: 1000; height: 1000"
       material="color: #333; src: #grid; repeat: 1000 1000; transparent: true; metalness: 0.6; roughness: 0.4"
       rotation="-90 0 0">
