@@ -12,7 +12,8 @@
       A-Frame is a Mozilla project. While the examples below are viewable in most current
       browsers the results currently render best in Firefox.
       <br><br>
-      Continuing from the text demo, Hiero generated both the .fnt and .png files at the same time.
+      <a href="text.html">Continuing from the text demo</a>, Hiero generated both
+      the .fnt and .png files for my custom font at the same time.
     </div>
     <div class="links">
       <a href="fonts/aframe-arial-black-hollow.fnt">aframe-arial-black-hollow.fnt</a>
@@ -30,7 +31,7 @@
     <div class="text">
       There are more efficient ways to display 3D text but as a proof of concept
       I used Blender to convert an SVG of the letter 'a' from my Arial-Black-Hollow
-      font into a gltf and obj 3D models that can be dragged by a mouse.
+      font into a gltf and obj 3D models that can be dragged by a mouse in the window below.
     </div>
     <div class="links">
       <a href="vr/a.gltf">a.gltf model</a>
@@ -44,26 +45,11 @@
       by pressing the buttons below.
     </div>
 
-    <!-- buttons change which model is viewed in the iframe -->
-    <script>
-      function set_gltf() {
-        if (document.getElementById("model-viewer").children[0].id != "gltf") {
-          document.getElementById("model-viewer").children[0].src = "a-frame/mouse-drag-a-gltf.html";
-          document.getElementById("model-viewer").children[0].id  = "gltf";
-        }
-      }
-      function set_obj() {
-        if (document.getElementById("model-viewer").children[0].id != "obj") {
-          document.getElementById("model-viewer").children[0].src = "a-frame/mouse-drag-a-obj.html";
-          document.getElementById("model-viewer").children[0].id  = "obj";
-        }
-      }
-    </script>
-
     <div class="buttons">
-      <button id="gltf_button" onclick="set_gltf()" autofocus>gltf model</button>
+      <button id="gltf_button" style="color: #666; background-color: white;" onclick="set_gltf()">gltf model</button>
       <button id="obj_button" onclick="set_obj()">obj model</button>
     </div>
+    <div id="model-viewer-title">gltf</div>
     <div id="model-viewer">
       <iframe id="gltf" src="a-frame/mouse-drag-a-gltf.html"></iframe>
     <div>
@@ -78,8 +64,38 @@
       an A-Frame scene can be embedded on a Wordpress page:
     </div>
     <div id="bottom">
-      <a class="big_link" href="vr_wp/index.php/2018/07/12/gltf-file-in-a-frame/">Wordpress demo displaying gltf file</a>
-      <a class="big_link" href="vr_wp/index.php/2018/07/12/obj-file-in-a-frame/">Wordpress demo displaying obj file</a>
+      <a class="big_link" href="vr_wp/index.php/2018/07/12/gltf-file-in-a-frame/index.html">Wordpress demo displaying gltf file</a>
+      <a class="big_link" href="vr_wp/index.php/2018/07/12/obj-file-in-a-frame/index.html">Wordpress demo displaying obj file</a>
     </div>
+
+
+    <!-- changes which model is in the model-viewer -->
+    <script>
+      function set_gltf() {
+        if (document.getElementById('model-viewer').children[0].id != "gltf") {
+          document.getElementById('obj_button').style.color = 'white';
+          document.getElementById('obj_button').style.backgroundColor = '#666';
+          document.getElementById('model-viewer-title').innerHTML = ' ';
+
+          document.getElementById('model-viewer').children[0].src = "a-frame/mouse-drag-a-gltf.html";
+
+          document.getElementById("model-viewer").children[0].id  = "gltf";
+          document.getElementById("model-viewer-title").innerHTML = "gltf";
+          document.getElementById("gltf" + "_button").style.color = "#666";
+          document.getElementById("gltf" + "_button").style.backgroundColor = "white";
+        }
+      }
+      function set_obj() {
+        if (document.getElementById("model-viewer").children[0].id != "obj") {
+          document.getElementById("gltf_button").style.color = "white";
+          document.getElementById("gltf_button").style.backgroundColor = "#666";
+          document.getElementById("model-viewer").children[0].src = "a-frame/mouse-drag-a-obj.html";
+          document.getElementById("model-viewer").children[0].id  = "obj";
+          document.getElementById("model-viewer-title").innerHTML = "obj";
+          document.getElementById("obj_button").style.color = "#666";
+          document.getElementById("obj_button").style.backgroundColor = "white";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -29,9 +29,9 @@ button {
   outline: none;
 }
 
-button:focus, button:active {
-  color: #666;
-  background-color: white;
+button:hover {
+  color: white;
+  background-color: #888;
 }
 
 button::-moz-focus-inner {
@@ -82,6 +82,10 @@ button::-moz-focus-inner {
   font-size: 200%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#model-viewer-title {
+  font-size: 200%;
 }
 
 #python {

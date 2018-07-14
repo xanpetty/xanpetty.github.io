@@ -45,3 +45,10 @@ The A-frame text geometry component wraps the three.js text geometry component. 
 https://threejs.org/docs/?q=textge#api/geometries/TextGeometry
 
 The text geometry component requires a json format font which is can be obtained from https://gero3.github.io/facetype.js/
+
+
+-- static Wordpress --
+
+using the Simply Static plug-in was mostly painless but when exporting there's a setting where one puts the root
+directory for the location of the wordpress install. If installation will go in the main folder then leave it as '/'.
+Overall it seems like a pretty dumb design since the internal links will break if it's put in a different folder
